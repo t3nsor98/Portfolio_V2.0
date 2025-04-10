@@ -1,8 +1,20 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Dock from "./animated_components/Dock.jsx";
-import { VscHome, VscAccount, VscTools, VscFolderLibrary, VscHeart, VscMail } from "react-icons/vsc";
-import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
+import {
+  VscHome,
+  VscAccount,
+  VscTools,
+  VscFolderLibrary,
+  VscHeart,
+  VscMail,
+} from "react-icons/vsc";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useNavigate,
+} from "react-router-dom";
 import Home from "./components/Home.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 import Skills from "./components/Skills.jsx";
@@ -64,7 +76,6 @@ function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-white">Digbijaya Lenka</h1>
       <Dock
         items={items}
         panelHeight={68}
