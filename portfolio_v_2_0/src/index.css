@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
-body{
-    background-color: #000000;
+body {
+  background-color: #000000;
+  -webkit-user-select: none;
+  user-select: none;
 }
