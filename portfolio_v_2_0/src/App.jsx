@@ -76,12 +76,15 @@ function App() {
 
   return (
     <>
-      <Dock
-        items={items}
-        panelHeight={68}
-        baseItemSize={50}
-        magnification={magnification} // Dynamically set magnification
-      />
+      <div className="relative min-h-screen">{/* Other content */}</div>
+      <div className="fixed bottom-0 left-0 w-full z-50">
+        <Dock
+          items={items}
+          panelHeight={68}
+          baseItemSize={50}
+          magnification={magnification} // Dynamically set magnification
+        />
+      </div>
     </>
   );
 }
