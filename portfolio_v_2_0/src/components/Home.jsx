@@ -26,7 +26,7 @@ function Home() {
           <span className="text-blue-400">Designs That Engage</span>
         </h1>
 
-        <p className="mt-6 text-xl text-gray-300 leading-relaxed">
+        <p className="mt-6 text-lg sm:text-2xl text-gray-300 leading-relaxed">
           Hi, I'm <span className="text-blue-400">Digbijaya Lenka</span>, a
           passionate MERN Stack Developer with a knack for turning complex
           challenges into clean, functional solutions. I specialize in building
