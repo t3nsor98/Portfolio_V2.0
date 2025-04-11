@@ -75,8 +75,20 @@ function App() {
   ];
 
   return (
-    <>
-      <div className="relative min-h-screen">{/* Other content */}</div>
+    <div className="relative min-h-screen flex flex-col">
+      {/* Main content */}
+      <div className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/interests" element={<Interests />} />
+          <Route path="/contact" element={<ContactMe />} />
+        </Routes>
+      </div>
+
+      {/* Dock at the bottom */}
       <div className="fixed bottom-0 left-0 w-full z-50">
         <Dock
           items={items}
@@ -85,21 +97,13 @@ function App() {
           magnification={magnification} // Dynamically set magnification
         />
       </div>
-    </>
+    </div>
   );
 }
 
 function AppWrapper() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutMe />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/interests" element={<Interests />} />
-        <Route path="/contact" element={<ContactMe />} />
-      </Routes>
       <App />
     </Router>
   );
