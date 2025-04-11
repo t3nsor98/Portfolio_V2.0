@@ -20,7 +20,7 @@ function Home() {
       </div>
 
       {/* Content on top of the particles */}
-      <div className="relative z-10 text-center max-w-5xl mx-auto px-4 py-16">
+      <div className="relative z-10 text-center max-w-5xl mx-auto px-4 py-8 sm:py-16">
         <h1 className="text-4xl sm:text-8xl font-bold text-white mb-4 leading-tight">
           Code That Works,{" "}
           <span className="text-blue-400">Designs That Engage</span>
