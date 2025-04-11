@@ -29,9 +29,13 @@ function Home() {
         <p className="mt-6 text-lg sm:text-2xl text-gray-300 leading-relaxed">
           Hi, I'm <span className="text-blue-400">Digbijaya Lenka</span>, a
           passionate MERN Stack Developer with a knack for turning complex
-          challenges into clean, functional solutions. I specialize in building
-          responsive and scalable web applications — from registration systems
-          and content management platforms to dynamic, user-driven websites.
+          challenges into clean, functional solutions.
+          <span className="hidden sm:inline">
+            {" "}
+            I specialize in building responsive and scalable web applications —
+            from registration systems and content management platforms to
+            dynamic, user-driven websites.
+          </span>
         </p>
 
         <div className="mt-8 max-w-3xl mx-auto">
